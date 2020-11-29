@@ -1,3 +1,3 @@
 def call(String... args) {
-    sh "./gradlew ${args.join(' ')} -s"
+    sh "gradlew ${args.join(' ')} -s"
 }
