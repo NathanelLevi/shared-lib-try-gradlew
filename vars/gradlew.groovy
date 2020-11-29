@@ -1,5 +1,5 @@
-def call(String directory, String cmd) {
-    dir (${directory}){
-        sh "./gradlew ${cmd} -s"
+def call(Map stageParams) {
+    dir (stageParams.dir){
+        sh './gradlew ' + stageParams.cmd + '-s'
     }
 }
